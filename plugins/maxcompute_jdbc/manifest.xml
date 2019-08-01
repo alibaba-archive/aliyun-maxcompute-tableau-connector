@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<connector-plugin class='maxcompute_jdbc' superclass='jdbc' plugin-version='0.0.0' name='MaxCompute' version='1.0'>
+  <connection-customization class="maxcompute_jdbc" enabled="true" version="1.0">
+    <vendor name="vendor"/>
+    <driver name="driver"/>
+    <customizations>
+      <customization name="CAP_FAST_METADATA" value="yes"/>
+      <customization name="CAP_QUERY_TOP_0_METADATA" value="no"/>
+      <customization name="CAP_QUERY_WHERE_FALSE_METADATA" value="no"/>
+
+      <customization name="CAP_CREATE_TEMP_TABLES" value="no"/>
+      <customization name="CAP_CREATE_TEMP_TABLES_DROP_NULLABILITY" value="no"/>
+      <customization name="CAP_INDEX_TEMP_TABLES" value="no"/>
+      <customization name="CAP_QUERY_USE_TEMP_TABLE_NAMES_AS_SUBQUERY_ALIASES" value="no"/>
+      <customization name="CAP_SELECT_INTO" value="no"/>
+      <customization name="CAP_SELECT_TOP_INTO" value="no"/>
+      <customization name="CAP_TEMP_TABLES_NOT_SESSION_SCOPED" value="yes"/>
+
+      <customization name="CAP_SUPPORTS_SPLIT_FROM_LEFT" value="yes"/>
+      <customization name="CAP_SUPPORTS_SPLIT_FROM_RIGHT" value="no"/>
+
+      <customization name="CAP_QUERY_ALLOW_JOIN_REORDER" value="yes"/>
+      <customization name="CAP_QUERY_ALLOW_PARTIAL_AGGREGATION" value="yes"/>
+      <customization name="CAP_QUERY_BOOL_IDENTIFIER_TO_LOGICAL" value="yes"/>
+      <customization name="CAP_QUERY_BOOLEXPR_TO_INTEXPR" value="no"/>
+      <customization name="CAP_QUERY_CASE_MATCHES_NULL" value="no"/>
+      <customization name="CAP_QUERY_CASE_PROMOTES_CHAR" value="yes"/>
+      <customization name="CAP_QUERY_FROM_REQUIRES_ALIAS" value="yes"/>
+      <customization name="CAP_QUERY_GROUP_ALLOW_DUPLICATES" value="yes"/>
+      <customization name="CAP_QUERY_GROUP_BY_ALIAS" value="no"/>
+      <customization name="CAP_QUERY_GROUP_BY_BOOL" value="yes"/>
+      <customization name="CAP_QUERY_GROUP_BY_DEGREE" value="no"/>
+      <customization name="CAP_QUERY_HAVING_REQUIRES_GROUP_BY" value="yes"/>
+      <customization name="CAP_QUERY_HAVING_UNSUPPORTED" value="no"/>
+      <customization name="CAP_QUERY_INCLUDE_GROUP_BY_COLUMNS_IN_SELECT" value="yes"/>
+      <customization name="CAP_QUERY_INCLUDE_HAVING_COLUMNS_IN_SELECT" value="yes"/>
+      <customization name="CAP_QUERY_INITIAL_SQL_SPLIT_STATEMENTS" value="no"/>
+      <customization name="CAP_QUERY_INOUT_JOINS" value="yes"/>
+      <customization name="CAP_QUERY_JOIN_ACROSS_SCHEMAS" value="yes"/>
+      <customization name="CAP_QUERY_JOIN_MISMATCHED_VARCHAR_WIDTHS" value="yes"/>
+      <customization name="CAP_QUERY_JOIN_PREDICATE_REQUIRES_SCOPE" value="yes"/>
+      <customization name="CAP_QUERY_JOIN_PUSH_DOWN_CONDITION_EXPRESSIONS" value="yes"/>
+      <customization name="CAP_QUERY_JOIN_REQUIRES_SCOPE" value="yes"/>
+      <customization name="CAP_QUERY_JOIN_REQUIRES_SUBQUERY" value="yes"/>
+      <customization name="CAP_QUERY_NAKED_JOINS" value="yes"/>
+      <customization name="CAP_QUERY_SELECT_ALIASES_SORTED" value="no"/>
+      <customization name="CAP_QUERY_SORT_BY" value="yes"/>
+      <customization name="CAP_QUERY_SORT_BY_DEGREE" value="no"/>
+      <customization name="CAP_QUERY_SORT_BY_NON_NUMERIC" value="yes"/>
+      <customization name="CAP_QUERY_SUBQUERIES" value="yes"/>
+      <customization name="CAP_QUERY_SUBQUERIES_WITH_TOP" value="yes"/>
+      <customization name="CAP_QUERY_SUBQUERY_QUERY_CONTEXT" value="yes"/>
+      <customization name="CAP_QUERY_SUPPORT_EMPTY_GROUPBY" value="no"/>
+      <customization name="CAP_QUERY_TOP_0" value="yes"/>
+      <customization name="CAP_QUERY_TOP_N" value="yes"/>
+      <customization name="CAP_QUERY_TOP_PERCENT" value="no"/>
+      <customization name="CAP_QUERY_TOP_SAMPLE" value="no"/>
+      <customization name="CAP_QUERY_TOP_SAMPLE_FAST" value="no"/>
+      <customization name="CAP_QUERY_TOP_SAMPLE_PERCENT" value="no"/>
+      <customization name="CAP_QUERY_USE_DOMAIN_RANGES_OPTIMIZATION" value="yes"/>
+      <customization name="CAP_QUERY_USE_QUERY_FUSION" value="yes"/>
+      <customization name="CAP_QUERY_WRAP_SUBQUERY_WITH_TOP" value="no"/>
+
+      <customization name="CAP_JDBC_EXPORT_DATA_BATCH" value="no"/>
+      <customization name="CAP_JDBC_EXPORT_TRANSLATE_DATA_PARALLEL" value="yes"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_SMALL" value="yes"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_MEDIUM" value="yes"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_LARGE" value="yes"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_MASSIVE" value="yes"/>
+      <customization name="CAP_JDBC_METADATA_GET_INDEX_INFO" value="no"/>
+      <customization name="CAP_JDBC_METADATA_READ_FOREIGNKEYS" value="no"/>
+      <customization name="CAP_JDBC_METADATA_READ_PRIMARYKEYS" value="no"/>
+      <customization name="CAP_JDBC_QUERY_ASYNC" value="yes"/>
+      <customization name="CAP_JDBC_QUERY_CANCEL" value="yes"/>
+      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_DATABASES" value="no"/>
+      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_SCHEMAS" value="no"/>
+      <customization name="CAP_JDBC_SUPPRESS_ENUMERATE_TABLES" value="no"/>
+
+      <customization name="CAP_CONNECT_STORED_PROCEDURE" value="no"/>
+
+      <customization name="CAP_SUPPORTS_UNION" value="yes"/>
+
+    </customizations>
+  </connection-customization>
+  <connection-dialog file='connection-dialog.tcd'/>
+  <connection-resolver file="connectionResolver.tdr"/>
+  <dialect file='dialect.tdd'/>
+</connector-plugin>

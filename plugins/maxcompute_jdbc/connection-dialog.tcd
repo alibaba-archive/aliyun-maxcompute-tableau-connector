@@ -1,0 +1,6 @@
+<connection-dialog class='maxcompute_jdbc'>
+  <connection-config>
+    <authentication-mode value='None' />
+    <has-pre-connect-database value="false" />
+  </connection-config>
+</connection-dialog>
