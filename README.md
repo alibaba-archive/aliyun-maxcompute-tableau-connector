@@ -10,12 +10,12 @@ This connector is developed under the [Tableau official guidance](https://tablea
 
 1. Install TDVT: `python3 -m pip install tdvt-1.5.14.tar.gz`
 1. Setup MaxCompute project and prepare tables for TDVT(check `dataset/maxcompute/*.sql`), run `setproject.sql` as project owner and the output of `setproject;` should contains
-```
-odps.sql.validate.orderby.limit=false
-odps.sql.decimal.odps2=true
-odps.sql.type.system.odps2=true
-odps.sql.timezone=UTC
-```
+   ```
+   odps.sql.validate.orderby.limit=false
+   odps.sql.decimal.odps2=true
+   odps.sql.type.system.odps2=true
+   odps.sql.timezone=UTC
+   ```
 1. Update config/odps_config.ini, set 'CommandLineOverride' to be the path to unzipped 'plugin' directory
 1. Update config/odps_config.ini, set 'tablePrefix' to be your maxcompute project name
 1. Edit config/tdvt/tdvt.ini and set the path to tabquerytool
