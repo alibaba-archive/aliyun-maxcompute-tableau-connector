@@ -24,8 +24,9 @@ This connector is developed under the [Tableau official guidance](https://tablea
 1. Follow the TDVT guidance to run tests
 
 ### Tips
+1. Since TDVT has a fixed 60 minutes timeout, and MaxCompute takes about 140 minutes, please install TDVT using the archive provided by us
 1. The log of jdbc is in the same directory of jdbc driver
-1. To generate tds file, `scripts/start.sh` provides an example to start Tableau desktop with MaxCompute connector. You need to modify the path to make the script run correctly.
+1. To generate tds file, `scripts/start.sh` provides an example to start Tableau desktop with MaxCompute connector. You need to modify the path to make the script run correctly
 
 ## LICENSE
 
