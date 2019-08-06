@@ -15,6 +15,7 @@ This connector is developed under the [Tableau official guidance](https://tablea
    odps.sql.decimal.odps2=true
    odps.sql.type.system.odps2=true
    odps.sql.timezone=UTC
+   odps.sql.hive.compatible=true
    ```
 1. Update config/odps_config.ini, set 'CommandLineOverride' to be the path to unzipped 'plugin' directory
 1. Update config/odps_config.ini, set 'tablePrefix' to be your maxcompute project name
