@@ -35,6 +35,7 @@
       <argument type='datetime' />
     </date-function>
   </function-map>
-
-    
+  <sql-format>
+    <format-is-distinct value='NoNullCheck' />
+  </sql-format>
 </dialect>
