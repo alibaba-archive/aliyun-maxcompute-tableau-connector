@@ -1,9 +1,6 @@
 <connection-dialog class='maxcompute_jdbc'>
   <connection-config>
     <authentication-mode value='Basic' />
-    <authentication-options>
-      <option name="UsernameAndPassword" default="true" />
-    </authentication-options>
-  <has-pre-connect-database value="false" />
+    <has-pre-connect-database value="false" />
   </connection-config>
 </connection-dialog>
