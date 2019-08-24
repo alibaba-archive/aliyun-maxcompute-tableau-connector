@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<connector-plugin class='maxcompute_jdbc' superclass='jdbc' plugin-version='0.0.0' name='MaxCompute' version='1.0'>
-  <connection-customization class="maxcompute_jdbc" enabled="true" version="1.0">
+<connector-plugin class='maxcompute_jdbc' superclass='jdbc' plugin-version='1.1' name='@string/maxcompute/' version='18.1'>
+  <connection-customization class="maxcompute_jdbc" enabled="true" version="18.1">
     <vendor name="vendor"/>
     <driver name="driver"/>
     <customizations>
