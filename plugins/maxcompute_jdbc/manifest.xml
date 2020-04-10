@@ -64,9 +64,9 @@
 
       <customization name="CAP_JDBC_EXPORT_DATA_BATCH" value="no"/>
       <customization name="CAP_JDBC_EXPORT_TRANSLATE_DATA_PARALLEL" value="yes"/>
-      <customization name="CAP_JDBC_JNI_FETCH_SIZE_SMALL" value="yes"/>
-      <customization name="CAP_JDBC_JNI_FETCH_SIZE_MEDIUM" value="yes"/>
-      <customization name="CAP_JDBC_JNI_FETCH_SIZE_LARGE" value="yes"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_SMALL" value="no"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_MEDIUM" value="no"/>
+      <customization name="CAP_JDBC_JNI_FETCH_SIZE_LARGE" value="no"/>
       <customization name="CAP_JDBC_JNI_FETCH_SIZE_MASSIVE" value="yes"/>
       <customization name="CAP_JDBC_METADATA_GET_INDEX_INFO" value="no"/>
       <customization name="CAP_JDBC_METADATA_READ_FOREIGNKEYS" value="no"/>
