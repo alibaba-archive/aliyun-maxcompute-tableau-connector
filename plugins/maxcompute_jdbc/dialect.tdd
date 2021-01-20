@@ -36,6 +36,7 @@
     </date-function>
   </function-map>
   <sql-format>
+    <format-datetime-literal formula="('%1')" format='yyyy-MM-dd HH:mm:ss' />
     <format-is-distinct value='NoNullCheck' />
   </sql-format>
 </dialect>
